@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/vector-colorful-doodle-abstract-seamless-background.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    padding: 50px;
+    position:relative;
+    background-position: left;
+
+}
+
+.name button{
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+   background-color: rgb(221, 202, 202);
+   border: 0;
+   font-size: 50px;
+   margin-left: 150px;
+   position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.To-do-app{
+    width: 60%;
+    background: rgb(221, 202, 202) ;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 40px;
+    margin-top:inherit;
+
+} 
+
+.row{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(75, 210, 134);
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+   
+}
+
+.row button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(170, 128, 255);
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;  
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+    border-radius: 40px;
+    font-family: 'Times New Roman', Times, serif
+   
+    
+}
+
+#input-box::placeholder{
+    font-size: 20px;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    user-select: none;
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 30px;
+    width: 75%;
+    
+}
+
+/* ul li::before{
+    content: '';
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked.png);
+    display: flex;
+    border-radius: 50%;
+    position: absolute ;
+    background-size: cover; 
+  
+} */
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+/* ul li.checked::before{
+    background-image: url(images/checked.png);
+   
+} */
+
+ul li span{
+    position:absolute;
+    right: 1%;
+    top: 8px;
+    width:fit-content;
+    height: 40px;
+    font-size: 18px ;
+    font-weight: 10px;
+    line-height: 40px;
+    color: red;
+    
+}
+
+ul li span:hover{
+    cursor: pointer;
+}
+
